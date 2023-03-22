@@ -1,0 +1,32 @@
+#### Create Todo
+POST http://localhost:3000/todo
+Content-Type: application/json
+
+{
+    "title": "Buy groceries",
+    "description": "Milk, bread, eggs"
+}
+
+
+
+#### Get all Todos
+GET http://localhost:3000/todo
+
+
+
+#### Get Todo by ID
+GET http://localhost:3000/todo/6419f7c1aafbe3be78526a5a
+
+
+
+#### Update a Todo
+PATCH  http://localhost:3000/todo/6419f7c1aafbe3be78526a5a
+Content-Type: application/json
+
+{
+    "done": true
+}
+
+#### Delete a Todo
+DELETE http://localhost:3000/todo/6419f7c1aafbe3be78526a5a
+
